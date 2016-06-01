@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CGh-eg-ac8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--SVProgressHUD的使用-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHq-QF-odO">
+                                <rect key="frame" x="188" y="100" width="188" height="66"/>
+                                <state key="normal" title="下载"/>
+                                <connections>
+                                    <action selector="SVProgressHUDStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcY-Vr-8X2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-kK-TQF">
+                                <rect key="frame" x="0.0" y="100" width="188" height="66"/>
+                                <state key="normal" title="基础使用"/>
+                                <connections>
+                                    <action selector="SVProgressHUDBaseUse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKF-lL-9tE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-PT-C2d">
+                                <rect key="frame" x="10" y="176" width="355" height="481"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9YT-kK-TQF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/10" id="1sY-Of-z5F"/>
+                            <constraint firstItem="hHq-QF-odO" firstAttribute="width" secondItem="9YT-kK-TQF" secondAttribute="width" id="5Ab-9x-812"/>
+                            <constraint firstAttribute="trailing" secondItem="ylG-PT-C2d" secondAttribute="trailing" constant="10" id="BDp-0c-7hh"/>
+                            <constraint firstItem="9YT-kK-TQF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DWh-Ou-ROh"/>
+                            <constraint firstItem="9YT-kK-TQF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="SN2-dO-4MW"/>
+                            <constraint firstItem="hHq-QF-odO" firstAttribute="leading" secondItem="9YT-kK-TQF" secondAttribute="trailing" id="TCZ-zH-H20"/>
+                            <constraint firstItem="hHq-QF-odO" firstAttribute="top" secondItem="9YT-kK-TQF" secondAttribute="top" id="cHe-8A-LcF"/>
+                            <constraint firstItem="ylG-PT-C2d" firstAttribute="top" secondItem="9YT-kK-TQF" secondAttribute="bottom" constant="10" id="dqp-DV-P4y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ylG-PT-C2d" secondAttribute="bottom" constant="10" id="e5F-Ca-QXg"/>
+                            <constraint firstItem="9YT-kK-TQF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="fmZ-ZR-fsS"/>
+                            <constraint firstItem="hHq-QF-odO" firstAttribute="height" secondItem="9YT-kK-TQF" secondAttribute="height" id="jdR-Uv-hcB"/>
+                            <constraint firstItem="ylG-PT-C2d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="t65-CB-e0x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SVProgressHUD的使用" id="0Jv-za-MQL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imgView" destination="ylG-PT-C2d" id="tSM-W4-MFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341.5" y="-31.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahm-S1-bYE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CGh-eg-ac8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ULy-Mu-Z8F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bba-rF-1H8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01V-zS-xsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="179"/>
+        </scene>
+    </scenes>
+</document>
